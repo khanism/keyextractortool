@@ -65,7 +65,7 @@ def schedule_key(key_str: str, keylen: int):
     #Turn key to hex byte array
     key = bytearray.fromhex(key_str)
     #print("Key is", key)
-
+    
     #Initialize key schedule with base key
     for i in range(0, Nk):
         key_schedule.append((key[4*i], key[4*i+1], key[4*i+2], key[4*i+3]))

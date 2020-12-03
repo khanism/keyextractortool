@@ -62,7 +62,7 @@ with open(input_file, "rb") as f:
             print("Expaned key:\n" + key_schedule_calculated_str)
             print("\n")
             curr_offs += 1
-            #exit()
+            exit() #TODO: Fix file length bug and then keep searching until EOF, for now just stop at first key
         else:
             curr_offs += 1
 
